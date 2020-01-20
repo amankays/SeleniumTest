@@ -62,4 +62,8 @@ public class CreateTicket {
 		assignContact.click();
 		
 	}
+	
+	public void add_cc(String ccUser) {
+		addCc.click();
+	}
 }
