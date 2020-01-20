@@ -95,10 +95,9 @@ public class CreateTicket {
 	public void user_clicks_on_Support_Ticket() throws InterruptedException {
 		
 		dashboardPage = new MainDashboard(driver);
+		
 		dashboardPage.click_support();
-	
 		Thread.sleep(2000);
-
 		dashboardPage.click_support_ticket();
 		
 		loaderVisibilityWait();
