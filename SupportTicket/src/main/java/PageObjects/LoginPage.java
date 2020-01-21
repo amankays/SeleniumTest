@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Config.Xls_Reader;
+
 public class LoginPage {
 	
 	WebDriver driver;
@@ -41,6 +43,9 @@ public class LoginPage {
 	
 	public void fill_login_details(String username, String password) {
 		
+		Xls_Reader reader = new Xls_Reader("C:\\Users\\aman.k\\git\\SeleniumTestLocal\\SupportTicket\\ExcelData\\sample.xlsx");
+		username = reader.getCellData("Login", 0, 2);
+		password = reader.getCellData("Login", 1, 2);
 		enter_userName(username);
 		enter_password(password);
 		click_login();
