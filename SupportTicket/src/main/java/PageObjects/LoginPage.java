@@ -14,6 +14,7 @@ public class LoginPage {
 	WebDriver driver;
 	WebDriverWait wait;
 
+	Xls_Reader reader = new Xls_Reader("C:\\Users\\aman.k\\git\\SeleniumTestLocal\\SupportTicket\\ExcelData\\sample.xlsx");
 	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -41,11 +42,14 @@ public class LoginPage {
 		loginButton.click();
 	}
 	
-	public void fill_login_details(String username, String password) {
+	public void fill_login_details() {
 		
-		Xls_Reader reader = new Xls_Reader("C:\\Users\\aman.k\\git\\SeleniumTestLocal\\SupportTicket\\ExcelData\\sample.xlsx");
+		String username, password;
+		
+		
 		username = reader.getCellData("Login", 0, 2);
 		password = reader.getCellData("Login", 1, 2);
+		
 		enter_userName(username);
 		enter_password(password);
 		click_login();

@@ -1,6 +1,6 @@
 package PageObjects;
 
-public class EditTicket {
+public class EditTicketPage {
 
 	
 }

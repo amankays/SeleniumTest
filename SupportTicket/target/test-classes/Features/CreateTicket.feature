@@ -7,8 +7,7 @@ Feature: Successfully create a ticket under Supoport -> Ticket page
   @CSGLogin
   Scenario: Successful Login with valid credentials
     Given user navigates to CSG Login page
-    When user enters username and password given below
-      | rajesh.s | Kays@csg126 |
+    When user enters username and password
     Then page with title "Dashboard | Cook Command Center" should open
 
   @redirectSupportTicket
@@ -23,9 +22,7 @@ Feature: Successfully create a ticket under Supoport -> Ticket page
   
   @changeAssignContact
   Scenario: Verify that Contact area will designate one contact per ticket.
-  When user clicks on assign contact
-  And select a user given below
-  | rajni sandhu |
+  When user assign a contact
   Then selected user get replaced by previous assigned contact
   
   
