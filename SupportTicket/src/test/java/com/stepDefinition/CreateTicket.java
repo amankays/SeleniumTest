@@ -3,6 +3,7 @@ package com.stepDefinition;
 
 import java.util.Date;
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.driver.DriverInstance;
+
+import PageObjects.CreateTicketPage;
 import PageObjects.LoginPage;
 import PageObjects.MainDashboard;
 import PageObjects.SupportTicket;
@@ -27,6 +30,7 @@ public class CreateTicket {
 	LoginPage loginPage;
 	MainDashboard dashboardPage;
 	SupportTicket supportTicketPage;
+	CreateTicketPage createTicket;
 	
 	String department;
 	String title;
@@ -47,6 +51,16 @@ public class CreateTicket {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 	
+	public void verify_title(String title) {
+		 Boolean flag =  wait.until(ExpectedConditions.titleIs(title));
+		   if(flag == true) {
+			   System.out.println("Title matched successfully");
+		   }
+		   else {
+			   System.out.println("Title doesnt matched, Please try again later.");
+		   }
+	}
+	
 	
 	public WebElement loaderVisibilityWait() {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"loader-text\"]")));
@@ -62,18 +76,11 @@ public class CreateTicket {
 		driver.get("https://qa.cooksecuritygroup.com:9116/");
 	}
 
-	@When("user enters username and password given below")
-	public void user_enters_username_and_password_given_below(DataTable data) {
-		
-		List<List<String>> dataList = data.asLists();  //convert data in list
-		   for(List<String> row: dataList) {
-			   String username = row.get(0);
-			   String password = row.get(1);
-			   
+	@When("user enters username and password")
+	public void user_enters_username_and_password_given_below() {
+					   
 			   loginPage = new LoginPage(driver);
-			   loginPage.fill_login_details(username, password);
-			   
-		   }
+			   loginPage.fill_login_details();
 		    
 	}
 
@@ -81,13 +88,7 @@ public class CreateTicket {
 	public void page_with_title_should_open(String title) {
 		
 		   loaderInvisibilityWait();
-		   Boolean flag =  wait.until(ExpectedConditions.titleIs(title));
-		   if(flag == true) {
-			   System.out.println("Title matched successfully");
-		   }
-		   else {
-			   System.out.println("Title doesnt matched, Please try again later.");
-		   }
+		   verify_title(title);
 	    
 	}
 
@@ -100,7 +101,7 @@ public class CreateTicket {
 		Thread.sleep(2000);
 		dashboardPage.click_support_ticket();
 		
-		loaderVisibilityWait();
+//		loaderVisibilityWait();
 		loaderInvisibilityWait();
 	
 	}
@@ -179,33 +180,33 @@ public class CreateTicket {
 //		
 //	}
 	
-	@When("user clicks on assign contact")
-	public void user_clicks_on_assign_contact() {
+	@When("user assign a contact")
+	public void user_clicks_on_assign_contact() throws InterruptedException {
 		
 	   //Click on assign contact button.
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("aViewContacts"))).click();
-//		loaderVisibilityWait();
+		createTicket = new CreateTicketPage(driver);
+		createTicket.assign_contact();
 		loaderInvisibilityWait();
 	}
 
-	@When("select a user given below")
-	public void select_a_user_given_below(DataTable contactUser) throws InterruptedException {
-	    
-		List<String> contactInfo = contactUser.asList();
-		Thread.sleep(3000);
-		
-		//Search user to select as a contact
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id=\"FullName\"]"))).sendKeys(contactInfo.get(0));
-		Thread.sleep(2000);
-		
-		//Check checkbox to select user as contact.
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[@class=\"bs-checkbox \"]//input[@type='radio']"))).click();
-		
-		//Click on add button to add contact.
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("AddSupportContact"))).click();
-		
-		loaderInvisibilityWait();
-	}
+//	@When("select a user given below")
+//	public void select_a_user_given_below(DataTable contactUser) throws InterruptedException {
+//	    
+//		List<String> contactInfo = contactUser.asList();
+//		Thread.sleep(3000);
+//		
+//		//Search user to select as a contact
+//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id=\"FullName\"]"))).sendKeys(contactInfo.get(0));
+//		Thread.sleep(2000);
+//		
+//		//Check checkbox to select user as contact.
+//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[@class=\"bs-checkbox \"]//input[@type='radio']"))).click();
+//		
+//		//Click on add button to add contact.
+//		wait.until(ExpectedConditions.elementToBeClickable(By.id("AddSupportContact"))).click();
+//		
+//		loaderInvisibilityWait();
+//	}
 	
 	@When("user clicks on Cc Add new button")
 	public void user_clicks_on_Cc_Add_new_button() throws InterruptedException {

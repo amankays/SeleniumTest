@@ -7,12 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CreateTicket {
+import Config.Xls_Reader;
+
+public class CreateTicketPage {
 	
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	public CreateTicket(WebDriver driver) {
+	Xls_Reader reader = new Xls_Reader("C:\\Users\\aman.k\\git\\SeleniumTestLocal\\SupportTicket\\ExcelData\\sample.xlsx");
+	
+	public CreateTicketPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
@@ -32,8 +36,19 @@ public class CreateTicket {
 	@FindBy(id="ddlLocation")
 	WebElement locationDropDown;
 	
+//	--------------------------------------------------------------------------------------------------------------------------
 	@FindBy(id="aViewContacts")
 	WebElement assignContact;
+	
+	@FindBy(xpath="//input[@id=\"FullName\"]")
+	WebElement contactNameSearch;
+	
+	@FindBy(xpath="//td[@class=\"bs-checkbox \"]//input[@type='radio']")
+	WebElement contactCheckbox;
+	
+	@FindBy(id="AddSupportContact")
+	WebElement addContactButton;
+//	-----------------------------------------------------------------------------------------------------------------------------
 	
 	@FindBy(id="aViewCCContacts")
 	WebElement addCc;
@@ -58,8 +73,19 @@ public class CreateTicket {
 		loc.selectByVisibleText(location);
 	}
 	
-	public void assign_contact(String contactName) {
+	public void assign_contact() throws InterruptedException {
+		
 		assignContact.click();
+		
+		String contactName = reader.getCellData("CreateTicket", 4, 2);
+		Thread.sleep(2000);
+		contactNameSearch.sendKeys(contactName);
+		Thread.sleep(2000);
+		contactCheckbox.click();
+		Thread.sleep(2000);
+		addContactButton.click();
+		
+		
 		
 	}
 	
