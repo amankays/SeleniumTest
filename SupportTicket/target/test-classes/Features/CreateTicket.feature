@@ -20,7 +20,7 @@ Feature: Successfully create a ticket under Supoport -> Ticket page
 	When user clicks on New Ticket
   Then page with title "CreateTicket | Cook Command Center" should open
   
-  @changeAssignContact
+  @AssignContact
   Scenario: Verify that Contact area will designate one contact per ticket.
   When user assign a contact
   Then selected user get replaced by previous assigned contact
@@ -28,28 +28,22 @@ Feature: Successfully create a ticket under Supoport -> Ticket page
   
  @AddCcContact
 	Scenario: Verify that user can add user contacts as Cc
-	When user clicks on Cc Add new button
-	Then Add Cc Pop-up opens
-	When user navigate to email tab
-	And enter below givem emails
-	| rajni.s@kaysharbor.com |
+	When user navigate to Cc email tab
+	And enter givem emails
 	Then added emails will be selected as Cc contact
 	
     
   @addAttachment
   Scenario: Verify that user can add attachment
   When user clicks on new attachment button
-  And select a file given below
-  | 123.jpg | New image file attached |
+  And select a given file
   Then file got selected as an attachment
   
   @CreateTicketFillAllmandatoryFields
   Scenario: Verify that when the new ticket is created from the Tickets, page is redirected to the Edit Ticket page with a successful message " Ticket was created successfully"
-    When user enters below given data  
-      | Helpdesk   | Title is to test create another ticket with automation. | rajesh.s created this ticket. | 
-     And click on create
-     Then Ticket Id created successfully
-     And page with title "EditTicket | Cook Command Center" should open
+    When user enters given mandatory data
+    Then Ticket Id created successfully
+    And page with title "EditTicket | Cook Command Center" should open
      
   
 	

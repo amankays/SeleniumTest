@@ -31,6 +31,7 @@ public class MainDashboard {
 	//Methods to handle page elements
 	public void click_support() throws InterruptedException {
 		
+		Thread.sleep(2000);
 		int x = support.getLocation().getX();
 		int y = support.getLocation().getY();
 		JavascriptExecutor js =  (JavascriptExecutor)driver;

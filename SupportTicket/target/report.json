@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8212834325,
+              "duration": 3127614241,
               "status": "passed"
             },
             "line": 5,
@@ -30,11 +30,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:46:27.448Z",
+        "start_timestamp": "2020-01-29T05:06:32.557Z",
         "before": [
           {
             "result": {
-              "duration": 1103891,
+              "duration": 910192,
               "status": "passed"
             },
             "match": {
@@ -49,7 +49,7 @@
         "after": [
           {
             "result": {
-              "duration": 795564,
+              "duration": 859278,
               "status": "passed"
             },
             "match": {
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8651309652,
+              "duration": 5803607430,
               "status": "passed"
             },
             "line": 9,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 6243471937,
+              "duration": 1172657622,
               "status": "passed"
             },
             "line": 10,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 13926027606,
+              "duration": 8598529642,
               "status": "passed"
             },
             "line": 11,
@@ -118,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 575127,
+              "duration": 581953,
               "status": "passed"
             },
             "line": 5,
@@ -137,11 +137,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:04.557Z",
+        "start_timestamp": "2020-01-29T05:06:51.211Z",
         "before": [
           {
             "result": {
-              "duration": 87037,
+              "duration": 96424,
               "status": "passed"
             },
             "match": {
@@ -156,7 +156,7 @@
         "after": [
           {
             "result": {
-              "duration": 63997,
+              "duration": 71678,
               "status": "passed"
             },
             "match": {
@@ -169,7 +169,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11913606906,
+              "duration": 14409053674,
               "status": "passed"
             },
             "line": 15,
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 68184714,
+              "duration": 73056798,
               "status": "passed"
             },
             "line": 16,
@@ -213,7 +213,7 @@
         "steps": [
           {
             "result": {
-              "duration": 502881,
+              "duration": 681221,
               "status": "passed"
             },
             "line": 5,
@@ -232,11 +232,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:16.543Z",
+        "start_timestamp": "2020-01-29T05:07:05.629Z",
         "before": [
           {
             "result": {
-              "duration": 105526,
+              "duration": 141933,
               "status": "passed"
             },
             "match": {
@@ -251,7 +251,7 @@
         "after": [
           {
             "result": {
-              "duration": 65705,
+              "duration": 72246,
               "status": "passed"
             },
             "match": {
@@ -264,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3488666695,
+              "duration": 5072054450,
               "status": "passed"
             },
             "line": 20,
@@ -276,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 108876528,
+              "duration": 89672058,
               "status": "passed"
             },
             "line": 21,
@@ -308,7 +308,7 @@
         "steps": [
           {
             "result": {
-              "duration": 572568,
+              "duration": 509138,
               "status": "passed"
             },
             "line": 5,
@@ -327,11 +327,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:20.143Z",
+        "start_timestamp": "2020-01-29T05:07:10.771Z",
         "before": [
           {
             "result": {
-              "duration": 95002,
+              "duration": 101259,
               "status": "passed"
             },
             "match": {
@@ -346,7 +346,7 @@
         "after": [
           {
             "result": {
-              "duration": 70255,
+              "duration": 95854,
               "status": "passed"
             },
             "match": {
@@ -359,7 +359,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6904336038,
+              "duration": 6700153652,
               "status": "passed"
             },
             "line": 25,
@@ -371,7 +371,7 @@
           },
           {
             "result": {
-              "duration": 56845151,
+              "duration": 108395264,
               "status": "passed"
             },
             "line": 26,
@@ -384,7 +384,7 @@
         ],
         "tags": [
           {
-            "name": "@changeAssignContact"
+            "name": "@AssignContact"
           }
         ]
       },
@@ -397,7 +397,7 @@
         "steps": [
           {
             "result": {
-              "duration": 851598,
+              "duration": 882033,
               "status": "passed"
             },
             "line": 5,
@@ -416,11 +416,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:27.109Z",
+        "start_timestamp": "2020-01-29T05:07:17.554Z",
         "before": [
           {
             "result": {
-              "duration": 98130,
+              "duration": 351846,
               "status": "passed"
             },
             "match": {
@@ -435,7 +435,7 @@
         "after": [
           {
             "result": {
-              "duration": 159852,
+              "duration": 69687,
               "status": "passed"
             },
             "match": {
@@ -448,35 +448,11 @@
         "steps": [
           {
             "result": {
-              "duration": 3543690610,
+              "duration": 2537614798,
               "status": "passed"
             },
             "line": 31,
-            "name": "user clicks on Cc Add new button",
-            "match": {
-              "location": "CreateTicket.user_clicks_on_Cc_Add_new_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 54468130,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Add Cc Pop-up opens",
-            "match": {
-              "location": "CreateTicket.add_Cc_Pop_up_opens()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3166195548,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "user navigate to email tab",
+            "name": "user navigate to Cc email tab",
             "match": {
               "location": "CreateTicket.user_navigate_to_email_tab()"
             },
@@ -484,30 +460,22 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d79.0.3945.130)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027KAYS-WS-17\u0027, ip: \u002710.0.0.189\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\\Users\\aman.k\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c027d39b5c5c1c1b0f883dfeeb225aca\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.stepDefinition.CreateTicket.enter_below_givem_emails(CreateTicket.java:279)\r\n\tat ✽.enter below givem emails(file:src/test/resources/Features/CreateTicket.feature:34)\r\n",
-              "duration": 7574551219,
-              "status": "failed"
+              "duration": 6505816692,
+              "status": "passed"
             },
-            "line": 34,
-            "name": "enter below givem emails",
+            "line": 32,
+            "name": "enter givem emails",
             "match": {
-              "location": "CreateTicket.enter_below_givem_emails(DataTable)"
+              "location": "CreateTicket.enter_below_givem_emails()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "rajni.s@kaysharbor.com"
-                ]
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1155090,
-              "status": "skipped"
+              "duration": 123056457,
+              "status": "passed"
             },
-            "line": 36,
+            "line": 33,
             "name": "added emails will be selected as Cc contact",
             "match": {
               "location": "CreateTicket.added_emails_will_be_selected_as_Cc_contact()"
@@ -530,7 +498,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1328310,
+              "duration": 508285,
               "status": "passed"
             },
             "line": 5,
@@ -549,11 +517,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:41.531Z",
+        "start_timestamp": "2020-01-29T05:07:26.704Z",
         "before": [
           {
             "result": {
-              "duration": 262533,
+              "duration": 95001,
               "status": "passed"
             },
             "match": {
@@ -561,14 +529,14 @@
             }
           }
         ],
-        "line": 40,
+        "line": 37,
         "name": "Verify that user can add attachment",
         "description": "",
         "id": "successfully-create-a-ticket-under-supoport--\u003e-ticket-page;verify-that-user-can-add-attachment",
         "after": [
           {
             "result": {
-              "duration": 83909,
+              "duration": 208490,
               "status": "passed"
             },
             "match": {
@@ -581,10 +549,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3235042426,
+              "duration": 3160248869,
               "status": "passed"
             },
-            "line": 41,
+            "line": 38,
             "name": "user clicks on new attachment button",
             "match": {
               "location": "CreateTicket.user_clicks_on_new_attachment_button()"
@@ -593,30 +561,22 @@
           },
           {
             "result": {
-              "duration": 2939823833,
+              "duration": 2963470606,
               "status": "passed"
             },
-            "line": 42,
-            "name": "select a file given below",
+            "line": 39,
+            "name": "select a given file",
             "match": {
-              "location": "CreateTicket.select_a_file_given_below(DataTable)"
+              "location": "CreateTicket.select_a_file_given_below()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "123.jpg",
-                  "New image file attached"
-                ]
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 91703207,
+              "duration": 105119429,
               "status": "passed"
             },
-            "line": 44,
+            "line": 40,
             "name": "file got selected as an attachment",
             "match": {
               "location": "CreateTicket.file_got_selected_as_an_attachment()"
@@ -639,7 +599,7 @@
         "steps": [
           {
             "result": {
-              "duration": 577403,
+              "duration": 591909,
               "status": "passed"
             },
             "line": 5,
@@ -658,11 +618,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:47.805Z",
+        "start_timestamp": "2020-01-29T05:07:32.922Z",
         "before": [
           {
             "result": {
-              "duration": 111214,
+              "duration": 153879,
               "status": "passed"
             },
             "match": {
@@ -670,14 +630,14 @@
             }
           }
         ],
-        "line": 47,
+        "line": 43,
         "name": "Verify that when the new ticket is created from the Tickets, page is redirected to the Edit Ticket page with a successful message \" Ticket was created successfully\"",
         "description": "",
         "id": "successfully-create-a-ticket-under-supoport--\u003e-ticket-page;verify-that-when-the-new-ticket-is-created-from-the-tickets--page-is-redirected-to-the-edit-ticket-page-with-a-successful-message-\"-ticket-was-created-successfully\"",
         "after": [
           {
             "result": {
-              "duration": 174358,
+              "duration": 80211,
               "status": "passed"
             },
             "match": {
@@ -690,44 +650,22 @@
         "steps": [
           {
             "result": {
-              "duration": 6286976526,
+              "duration": 13648897360,
               "status": "passed"
             },
-            "line": 48,
-            "name": "user enters below given data",
+            "line": 44,
+            "name": "user enters given mandatory data",
             "match": {
-              "location": "CreateTicket.user_enters_below_given_data(DataTable)"
+              "location": "CreateTicket.user_enters_below_given_data()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Helpdesk",
-                  "Title is to test create another ticket with automation.",
-                  "rajesh.s created this ticket."
-                ]
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca class\u003d\"btn btn-primary mr-10\" id\u003d\"...Ticket\"\u003eCreate\u003c/a\u003e is not clickable at point (299, 534). Other element would receive the click: \u003cdiv class\u003d\"loader-div\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d79.0.3945.130)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027KAYS-WS-17\u0027, ip: \u002710.0.0.189\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\\Users\\aman.k\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c027d39b5c5c1c1b0f883dfeeb225aca\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.stepDefinition.CreateTicket.click_on_create(CreateTicket.java:160)\r\n\tat ✽.click on create(file:src/test/resources/Features/CreateTicket.feature:50)\r\n",
-              "duration": 1149873541,
-              "status": "failed"
+              "duration": 87084839,
+              "status": "passed"
             },
-            "line": 50,
-            "name": "click on create",
-            "match": {
-              "location": "CreateTicket.click_on_create()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1500678,
-              "status": "skipped"
-            },
-            "line": 51,
+            "line": 45,
             "name": "Ticket Id created successfully",
             "match": {
               "location": "CreateTicket.ticket_Id_created_successfully()"
@@ -736,10 +674,10 @@
           },
           {
             "result": {
-              "duration": 1390317,
-              "status": "skipped"
+              "duration": 68634406,
+              "status": "passed"
             },
-            "line": 52,
+            "line": 46,
             "name": "page with title \"EditTicket | Cook Command Center\" should open",
             "match": {
               "arguments": [
@@ -768,7 +706,7 @@
         "steps": [
           {
             "result": {
-              "duration": 973051,
+              "duration": 492641,
               "status": "passed"
             },
             "line": 5,
@@ -787,11 +725,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-21T12:47:55.260Z",
+        "start_timestamp": "2020-01-29T05:07:46.697Z",
         "before": [
           {
             "result": {
-              "duration": 131125,
+              "duration": 91873,
               "status": "passed"
             },
             "match": {
@@ -799,14 +737,14 @@
             }
           }
         ],
-        "line": 58,
+        "line": 52,
         "name": "user successfully logout on click of LogOut option.",
         "description": "",
         "id": "successfully-create-a-ticket-under-supoport--\u003e-ticket-page;user-successfully-logout-on-click-of-logout-option.",
         "after": [
           {
             "result": {
-              "duration": 65988,
+              "duration": 58594,
               "status": "passed"
             },
             "match": {
@@ -819,10 +757,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4872570642,
+              "duration": 2896088281,
               "status": "passed"
             },
-            "line": 59,
+            "line": 53,
             "name": "user clicks on LogOut",
             "match": {
               "location": "CreateTicket.user_clicks_on_LogOut()"
@@ -831,10 +769,10 @@
           },
           {
             "result": {
-              "duration": 64450369,
+              "duration": 60080313,
               "status": "passed"
             },
-            "line": 60,
+            "line": 54,
             "name": "page with title \"Login | Cook Command Center\" should open",
             "match": {
               "arguments": [
