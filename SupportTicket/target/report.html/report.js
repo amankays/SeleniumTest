@@ -191,7 +191,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@changeAssignContact"
+      "name": "@AssignContact"
     }
   ]
 });
@@ -247,27 +247,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user clicks on Cc Add new button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CreateTicket.user_clicks_on_Cc_Add_new_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Add Cc Pop-up opens",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CreateTicket.add_Cc_Pop_up_opens()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user navigate to email tab",
+  "name": "user navigate to Cc email tab",
   "keyword": "When "
 });
 formatter.match({
@@ -277,22 +257,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "enter below givem emails",
-  "rows": [
-    {
-      "cells": [
-        "rajni.s@kaysharbor.com"
-      ]
-    }
-  ],
+  "name": "enter givem emails",
   "keyword": "And "
 });
 formatter.match({
-  "location": "CreateTicket.enter_below_givem_emails(DataTable)"
+  "location": "CreateTicket.enter_below_givem_emails()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d79.0.3945.130)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027KAYS-WS-17\u0027, ip: \u002710.0.0.189\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\\Users\\aman.k\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c027d39b5c5c1c1b0f883dfeeb225aca\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.stepDefinition.CreateTicket.enter_below_givem_emails(CreateTicket.java:279)\r\n\tat ✽.enter below givem emails(file:src/test/resources/Features/CreateTicket.feature:34)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "added emails will be selected as Cc contact",
@@ -302,7 +274,7 @@ formatter.match({
   "location": "CreateTicket.added_emails_will_be_selected_as_Cc_contact()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -346,19 +318,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "select a file given below",
-  "rows": [
-    {
-      "cells": [
-        "123.jpg",
-        "New image file attached"
-      ]
-    }
-  ],
+  "name": "select a given file",
   "keyword": "And "
 });
 formatter.match({
-  "location": "CreateTicket.select_a_file_given_below(DataTable)"
+  "location": "CreateTicket.select_a_file_given_below()"
 });
 formatter.result({
   "status": "passed"
@@ -405,34 +369,14 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user enters below given data",
-  "rows": [
-    {
-      "cells": [
-        "Helpdesk",
-        "Title is to test create another ticket with automation.",
-        "rajesh.s created this ticket."
-      ]
-    }
-  ],
+  "name": "user enters given mandatory data",
   "keyword": "When "
 });
 formatter.match({
-  "location": "CreateTicket.user_enters_below_given_data(DataTable)"
+  "location": "CreateTicket.user_enters_below_given_data()"
 });
 formatter.result({
   "status": "passed"
-});
-formatter.step({
-  "name": "click on create",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateTicket.click_on_create()"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca class\u003d\"btn btn-primary mr-10\" id\u003d\"...Ticket\"\u003eCreate\u003c/a\u003e is not clickable at point (299, 534). Other element would receive the click: \u003cdiv class\u003d\"loader-div\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d79.0.3945.130)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027KAYS-WS-17\u0027, ip: \u002710.0.0.189\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.16 (93fcc21110c10..., userDataDir: C:\\Users\\aman.k\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c027d39b5c5c1c1b0f883dfeeb225aca\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.stepDefinition.CreateTicket.click_on_create(CreateTicket.java:160)\r\n\tat ✽.click on create(file:src/test/resources/Features/CreateTicket.feature:50)\r\n",
-  "status": "failed"
 });
 formatter.step({
   "name": "Ticket Id created successfully",
@@ -442,7 +386,7 @@ formatter.match({
   "location": "CreateTicket.ticket_Id_created_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "page with title \"EditTicket | Cook Command Center\" should open",
@@ -452,7 +396,7 @@ formatter.match({
   "location": "CreateTicket.page_with_title_should_open(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
