@@ -158,7 +158,7 @@ public class CreateTicketPage {
 		ccEmailTextField.sendKeys(ccContact);
 		addCcButton.click();
 		Thread.sleep(2000);
-//		addCcButton.click();
+
 	}
 	
 	public void assign_contact() throws InterruptedException {
